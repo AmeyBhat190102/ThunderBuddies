@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Furry Friends</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b6868a5e32.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="validation.js"></script>
+
+</head>
+<body>
+    <!--------Header-------->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png" alt="Furry Friends Logo" width="115px"></a>
+            </div>
+            <div class="nav">
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="account">
+                <a href="login.html" title="Account">
+                    <i class="fas fa-user-circle fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--------------Account Page------------>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/logo1.png" alt="" width="80%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container" style="height: 860px;">
+                        <div class="form-btn">
+                            <span>Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form onsubmit="return register_validate()" action="login.html">
+                            <input type="text" id="email_address" placeholder="Email Address">
+                            <input type="text" id="uname" placeholder="Username">
+                            <input type="text" id="psw" placeholder="Password">
+                            <input type="text" id="confirm_psw" placeholder="Confirm Password">
+                            <input type="date" id="dob" placeholder="Date of Birth">
+                            <div class="sex" align="left">
+                                <label for="sex" style="font-size: 15px;">Sex</label>
+                                <input type="radio" value="Male" name="sex" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Male
+                                <input type="radio" value="Female" name="sex" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Female
+                            </div>
+                            <input type="text" id="mob_no" placeholder="Enter your Mobile Number">
+                            <select id="pet_owned">
+                                <option value="">Choose Pet Owned</option>
+                                <option value="Cat">Cat</option>
+                                <option value="Dog">Dog</option>
+                            </select>
+                            <input type="text" id="pet_breed" placeholder="Breed of Pet Owned">
+                            <input type="number" id="pet_age" placeholder="Your Pet's Age in years" min="1" max="25">
+                            <select id="robot_test">
+                                <option value="">Are you a Robot?</option>
+                                <option value="True">Yes!</option>
+                                <option value="False">Nope.</option>
+                            </select>
+                            <br>
+                            <div style="padding: 10px 0;" align="left">
+                                <input type="checkbox" name="checkbox_val" style="width: 10px; height: 10px;"><span>I agree to all the Terms and Conditions.</span><br>
+                                <input type="checkbox" name="checkbox_val" style="width: 10px; height: 10px;"><span>I would like to receive email notifications.</span>
+                            </div>
+                            <input type="reset" value="Reset" style="border-radius: 20px; display: inline-block; cursor: pointer;">
+                            <input type="submit" class="btn" value="Register">
+                            <a href="login.html">Already have an account? Login here.</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------Footer-------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo1.png" alt="Furry Friends Logo" width: 200px;"></a>
+                    </div>
+                    <p>Our purpose is to provide essential products
+                    for all those pet owners and pets out there.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                        <li><a href="https://www.youtube.com">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Furry Friends</p>
+        </div>
+    </footer>
+</body>
+</html>
